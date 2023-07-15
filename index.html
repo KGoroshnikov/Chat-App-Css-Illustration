@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+<body>
+
+  <div style="display: none;" class="message me">
+    <p>
+      
+    </p>
+  </div>
+
+
+  <div class="background">
+  </div>
+
+  <div class="background-second">
+  </div>
+
+  <div class="main-container">
+    <div class="phone-container">
+      <div class="app-header">
+        <div class="phone-cam"></div>
+        <div class="app-info">
+          <span class="material-symbols-outlined">
+            chevron_left
+          </span>
+          <div class="person">
+            <img src="images/avatar.jpg" alt="avatar">
+            <div class="person-info">
+              <p class="person-name">Samuel Green</p>
+              <p class="person-state">Available to Walk</p>
+            </div>
+          </div>
+          <span class="material-symbols-outlined three-dots">
+            more_vert
+          </span>
+        </div>
+      </div>
+      <div class="app-main">
+        <div class="app-messages">
+          <div class="group">
+            <div class="message friend">
+              <p>
+                That sounds great. I’d be happy with that.
+              </p>
+            </div>
+            <div class="message friend">
+              <p>
+                Could you send over some pictures of your dog, please?
+              </p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="message me photos">
+              <img src="images/dog-image-1.jpg" alt="dog-image">
+              <img src="images/dog-image-2.jpg" alt="dog-image">
+              <img src="images/dog-image-3.jpg" alt="dog-image">
+            </div>
+            <div class="message me">
+              <p>
+                Here are a few pictures. She’s a happy girl!
+              </p>
+            </div>
+            <div class="message me">
+              <p>
+                Can you make it?
+              </p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="message friend">
+              <p>
+                She looks so happy! The time we discussed works. How long shall I take her out for?
+              </p>
+            </div>
+            <div class="message friend price">
+              <label for="radio1">
+                <input type="radio" name="radio" id="radio1" />
+                <span class="price-time">
+                  30 minute walk
+                </span>
+              </label>
+              <h5 class="price-price">
+                $29
+              </h5>
+            </div>
+            <div class="message friend price">
+              <label for="radio2">
+                <input type="radio" name="radio" id="radio2"/>
+                <span class="price-time">
+                  1 hour walk
+                </span>
+              </label>
+              <h5 class="price-price">
+                $49
+              </h5>
+            </div>
+          </div>
+          <div style="display: none;" id="my-group" class="group">
+          </div>
+        </div>
+        <div class="app-input-container">
+          <label for="app-inpt">
+          </label>
+          <input id="app-inpt" type="text" placeholder="Type a message…">
+          <button onclick="enterMessage()" class="enter-button">
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <p class="text-head">
+        Simple booking
+      </p>
+      <p class="text-description">
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.
+      </p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+  <!--
+  Samuel Green
+  Available to Walk
+
+  That sounds great. I’d be happy with that.
+
+  Could you send over some pictures of your dog, please?
+
+  Here are a few pictures. She’s a happy girl!
+
+  Can you make it?
+
+  She looks so happy! The time we discussed works. How long shall I take her out for?
+
+  30 minute walk
+  $29
+
+  1 hour walk
+  $49
+
+  Type a message…
+
+  Simple booking
+
+  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+  discuss arrangements and make bookings. Once the walk has been completed you can rate 
+  your walker and book again all through the chat.-->
+</body>
+</html>
